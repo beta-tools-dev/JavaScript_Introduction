@@ -10,6 +10,12 @@
         border: 2px solid black; /* 2pxの黒い線 */
         padding: 5px; /* 内側の余白 */
       }
+      .red {
+        color: red;
+      }
+      .blue {
+        color: blue;
+      }
     </style>
   </head>
   <body>
@@ -36,6 +42,18 @@
     <input id="inputColorName" type="text" name="colorName" />
     <button id="zokuseiButton">属性値の取得</button>
     <p id="showText">未入力</p>
+    <hr />
+    <h1 id="colorheader">Hello JavaScript</h1>
+    <button id="koshinRed" type="button">class属性を追加・更新（赤）</button>
+    <button id="koshinBlue" type="button">class属性を追加・更新（青）</button>
+    <button id="koshinNan" type="button">class属性を削除</button>
+    <hr />
+    <h1>タグの取得</h1>
+    <p>見出し1</p>
+    <p>見出し2</p>
+    <p>見出し3</p>
+    <button id="getPtagBtn">pタグを取得</button>
+    <hr />
     <a href="../index.html">ポータルへ</a><br />
     <script src="main.js"></script>
   </body>
