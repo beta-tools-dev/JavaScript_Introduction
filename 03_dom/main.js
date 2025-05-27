@@ -100,3 +100,51 @@
     }
   });
 }
+
+// name属性で要素を取得
+{
+  let btn = document.getElementById("trig");
+  btn.addEventListener(
+    "click",
+    function (e) {
+      let inp = document.getElementsByName("inputText");
+      for (let i of inp) {
+        console.log(i.value);
+      }
+    },
+    false
+  );
+}
+
+// class属性で要素を取得
+{
+  let btn = document.getElementById("trigg");
+  btn.addEventListener(
+    "click",
+    function (e) {
+      let inp = document.getElementsByClassName("bar");
+      for (let i of inp) {
+        console.log(i.textContent);
+      }
+    },
+    false
+  );
+}
+
+// 要素の追加・削除
+{
+  let add = document.getElementById("add");
+  add.addEventListener(
+    "click",
+    function (e) {
+      let inputLang = document.getElementsByName("inputLang")[0];
+      let lang = inputLang.value;
+      let list = document.createElement("li");
+      list.textContent = lang;
+      let listl = document.getElementById("language");
+      listl.appendChild(list);
+      inputLang.value = '';
+    },
+    false
+  );
+}
